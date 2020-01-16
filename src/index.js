@@ -9,6 +9,7 @@ const quoteList = document.querySelector('#quote-list')
 const newQuoteForm = document.querySelector('#new-quote-form')
 const quoteField = document.querySelector('#new-quote')
 const authorField = document.querySelector('#author')
+const sortButton = document. querySelector('#sort-btn')
 
 //request functions 
 
@@ -62,7 +63,7 @@ function renderQuote(quote){
 
     let form = document.createElement("form")
     renderEditForm(form)
-    form.addEventListener("submit", () => editQuote(quote.id))
+    form.addEventListener("submit", () => editQuote(quote.id, p))
 
     let likesButton = document.createElement("button")
     likesButton.className = "btn-success"
@@ -106,9 +107,9 @@ function addNewQuote(){
         author: authorField.value,
         likes:[]
     }
-    post(likesUrl,bodyObject)
+    post(quotesWithLikesUrl,bodyObject)
     .then((newQuote) => renderQuote(newQuote))
-    debugger
+    event.target.reset()
 }
 
 function deleteQuote(id){
@@ -140,7 +141,7 @@ function showOrHideEditForm(form){
     }
 }
 
-function editQuote(quoteId){
+function editQuote(quoteId, p){
     event.preventDefault()
 
     bodyObject = {
@@ -148,12 +149,34 @@ function editQuote(quoteId){
     }
     
     patch(baseUrl, quoteId, bodyObject)
-    .then((quote) => )
+    .then((quote) => p.innerText = quote.quote)
+    event.target.reset()
+    showOrHideEditForm(event.target)
 }
+ function sortByAuthor(){
+    quoteList.innerText = ""
+
+     if(event.target.innerText === "Sort by author: OFF"){
+         event.target.innerText = "Sort by author: ON"
+         
+         get(quotesWithLikesUrl)
+         .then(quotes => sortQuotes(quotes))
+         .then(sortedQuotes => sortedQuotes.forEach(renderQuote) )
+    
+     }else{
+        event.target.innerText = "Sort by author: OFF"
+        getAllQuotes()
+     }
+ }
+
+ function sortQuotes(quotes){
+    return quotes.sort((a, b) => (a.author > b.author) ? 1 : -1)
+ }
 
 
 document.addEventListener("DOMContentLoaded", function(){
     getAllQuotes()
 
     newQuoteForm.addEventListener('submit', addNewQuote)
+    sortButton.addEventListener('click', sortByAuthor)
 })

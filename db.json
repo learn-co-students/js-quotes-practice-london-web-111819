@@ -6,11 +6,6 @@
       "author": "Collin Powell"
     },
     {
-      "id": 3,
-      "quote": "Don't count the days, make the days count.",
-      "author": "Mike Tyson"
-    },
-    {
       "id": 4,
       "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' You must do the thing you think you cannot do.",
       "author": "Eleanor Roosevelt"
@@ -74,32 +69,12 @@
       "id": 10
     },
     {
-      "quoteId": 3,
-      "id": 11
-    },
-    {
-      "quoteId": 3,
-      "id": 12
-    },
-    {
       "quoteId": 2,
       "id": 13
     },
     {
-      "quoteId": 3,
-      "id": 14
-    },
-    {
-      "quoteId": 3,
-      "id": 15
-    },
-    {
       "quoteId": 2,
       "id": 16
-    },
-    {
-      "quoteId": 3,
-      "id": 17
     },
     {
       "quoteId": 4,
@@ -120,14 +95,6 @@
     {
       "quoteId": 2,
       "id": 22
-    },
-    {
-      "quoteId": 3,
-      "id": 23
-    },
-    {
-      "quoteId": 3,
-      "id": 24
     },
     {
       "quoteId": 5,
@@ -160,22 +127,6 @@
     {
       "quoteId": 2,
       "id": 32
-    },
-    {
-      "quoteId": 3,
-      "id": 33
-    },
-    {
-      "quoteId": 3,
-      "id": 34
-    },
-    {
-      "quoteId": 3,
-      "id": 35
-    },
-    {
-      "quoteId": 3,
-      "id": 36
     },
     {
       "quoteId": 2,
@@ -242,46 +193,6 @@
       "id": 52
     },
     {
-      "quoteId": 3,
-      "id": 53
-    },
-    {
-      "quoteId": 3,
-      "id": 54
-    },
-    {
-      "quoteId": 3,
-      "id": 55
-    },
-    {
-      "quoteId": 3,
-      "id": 56
-    },
-    {
-      "quoteId": 3,
-      "id": 57
-    },
-    {
-      "quoteId": 3,
-      "id": 58
-    },
-    {
-      "quoteId": 3,
-      "id": 59
-    },
-    {
-      "quoteId": 3,
-      "id": 60
-    },
-    {
-      "quoteId": 3,
-      "id": 61
-    },
-    {
-      "quoteId": 3,
-      "id": 62
-    },
-    {
       "quoteId": 4,
       "id": 63
     },
@@ -306,14 +217,6 @@
       "id": 68
     },
     {
-      "quoteId": 3,
-      "id": 69
-    },
-    {
-      "quoteId": 3,
-      "id": 70
-    },
-    {
       "quoteId": 5,
       "id": 71
     },
@@ -321,6 +224,63 @@
       "quoteId": 2,
       "createdAt": 1578933924194,
       "id": 72
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169527512,
+      "id": 73
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169528016,
+      "id": 74
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169528416,
+      "id": 75
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169528760,
+      "id": 76
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169529129,
+      "id": 77
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169529457,
+      "id": 78
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169791053,
+      "id": 79
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169791244,
+      "id": 80
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1579169791429,
+      "id": 81
+    },
+    {
+      "quote": "ghjkl",
+      "author": "xpto",
+      "likes": [],
+      "id": 82
+    },
+    {
+      "quote": "ghjkl",
+      "author": "xpto",
+      "likes": [],
+      "id": 90
     }
   ]
 }
